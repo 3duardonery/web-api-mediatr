@@ -4,8 +4,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\APIMediatr.Domain\APIMediatr.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

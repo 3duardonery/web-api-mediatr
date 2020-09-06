@@ -1,15 +1,13 @@
-﻿using APIMediatr.Api.Commands;
-using APIMediatr.Api.Models;
-using APIMediatr.Api.Notifications;
-using APIMediatr.Api.Repositories;
+﻿using APIMediatr.Domain.Commands;
+using APIMediatr.Domain.Interfaces;
+using APIMediatr.Domain.Models;
+using APIMediatr.Domain.Notifications;
 using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace APIMediatr.Api.Handlers
+namespace APIMediatr.Domain.Handlers
 {
     public class AlteraPessoaCommandHandler :
         IRequestHandler<AlteraPessoaCommand, string>
@@ -17,14 +15,14 @@ namespace APIMediatr.Api.Handlers
         private readonly IMediator _mediator;
         private readonly IRepository<Pessoa> _repository;
 
-        public AlteraPessoaCommandHandler(IMediator mediator, 
+        public AlteraPessoaCommandHandler(IMediator mediator,
             IRepository<Pessoa> repository)
         {
             _mediator = mediator;
             _repository = repository;
         }
 
-        public async Task<string> Handle(AlteraPessoaCommand request, 
+        public async Task<string> Handle(AlteraPessoaCommand request,
             CancellationToken cancellationToken)
         {
             var pessoa = new Pessoa { Id = request.Id, Nome = request.Nome, Idade = request.Idade, Sexo = request.Sexo };

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace APIMediatr.Api.Repositories
+namespace APIMediatr.Domain.Interfaces
 {
     public interface IRepository<T>
     {

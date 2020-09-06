@@ -1,11 +1,10 @@
-﻿using APIMediatr.Api.Models;
-using System;
+﻿using APIMediatr.Domain.Interfaces;
+using APIMediatr.Domain.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
-namespace APIMediatr.Api.Repositories
+namespace APIMediatr.Infrastructure.Repositories
 {
     public class PessoaRepository : IRepository<Pessoa>
     {

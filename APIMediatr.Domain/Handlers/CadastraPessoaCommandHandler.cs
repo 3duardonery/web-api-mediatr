@@ -1,16 +1,13 @@
-﻿using APIMediatr.Api.Commands;
-using APIMediatr.Api.Models;
-using APIMediatr.Api.Notifications;
-using APIMediatr.Api.Repositories;
+﻿using APIMediatr.Domain.Commands;
+using APIMediatr.Domain.Interfaces;
+using APIMediatr.Domain.Models;
+using APIMediatr.Domain.Notifications;
 using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace APIMediatr.Api.Handlers
+namespace APIMediatr.Domain.Handlers
 {
     public class CadastraPessoaCommandHandler : 
         IRequestHandler<CadastraPessoaCommand, string>

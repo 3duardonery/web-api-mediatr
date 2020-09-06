@@ -1,12 +1,10 @@
-﻿using APIMediatr.Api.Notifications;
+﻿using APIMediatr.Domain.Notifications;
 using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace APIMediatr.Api.EventHanders
+namespace APIMediatr.Domain.EventHanders
 {
     public class LogEventHandler :
         INotificationHandler<PessoaCriadaNotification>,

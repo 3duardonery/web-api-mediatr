@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMediatr.Api", "APIMediatr.Api\APIMediatr.Api.csproj", "{96AF348A-7CE1-4212-9525-5707887BAA59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIMediatr.Domain", "APIMediatr.Domain\APIMediatr.Domain.csproj", "{30C94D71-B497-414A-A327-F7D091288F85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMediatr.Domain", "APIMediatr.Domain\APIMediatr.Domain.csproj", "{30C94D71-B497-414A-A327-F7D091288F85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIMediatr.Application", "APIMediatr.Application\APIMediatr.Application.csproj", "{4C54120C-30DF-41E1-87E5-DEBAB81B671E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMediatr.Application", "APIMediatr.Application\APIMediatr.Application.csproj", "{4C54120C-30DF-41E1-87E5-DEBAB81B671E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIMediatr.Infrastructure", "APIMediatr.Infrastructure\APIMediatr.Infrastructure.csproj", "{26F4A60C-D9E7-4641-9EFF-95646D107EB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMediatr.Infrastructure", "APIMediatr.Infrastructure\APIMediatr.Infrastructure.csproj", "{26F4A60C-D9E7-4641-9EFF-95646D107EB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIMediatr.CrossCutting.IoC", "APIMediatr.CrossCutting.IoC\APIMediatr.CrossCutting.IoC.csproj", "{1562FA93-DCDF-4999-B6BB-C434B8C5BA43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMediatr.CrossCutting.IoC", "APIMediatr.CrossCutting.IoC\APIMediatr.CrossCutting.IoC.csproj", "{1562FA93-DCDF-4999-B6BB-C434B8C5BA43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMediatr.Test", "ApiMediatr.Test\ApiMediatr.Test.csproj", "{9F57C7CB-DB3E-49FA-AAA0-3012C367EA0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMediatr.Presentation", "ApiMediatr.Presentation\ApiMediatr.Presentation.csproj", "{3700358F-2B81-43B4-8093-8D967E7FC37F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96AF348A-7CE1-4212-9525-5707887BAA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96AF348A-7CE1-4212-9525-5707887BAA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96AF348A-7CE1-4212-9525-5707887BAA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96AF348A-7CE1-4212-9525-5707887BAA59}.Release|Any CPU.Build.0 = Release|Any CPU
 		{30C94D71-B497-414A-A327-F7D091288F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{30C94D71-B497-414A-A327-F7D091288F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30C94D71-B497-414A-A327-F7D091288F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +37,14 @@ Global
 		{1562FA93-DCDF-4999-B6BB-C434B8C5BA43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1562FA93-DCDF-4999-B6BB-C434B8C5BA43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1562FA93-DCDF-4999-B6BB-C434B8C5BA43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F57C7CB-DB3E-49FA-AAA0-3012C367EA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F57C7CB-DB3E-49FA-AAA0-3012C367EA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F57C7CB-DB3E-49FA-AAA0-3012C367EA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F57C7CB-DB3E-49FA-AAA0-3012C367EA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3700358F-2B81-43B4-8093-8D967E7FC37F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3700358F-2B81-43B4-8093-8D967E7FC37F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3700358F-2B81-43B4-8093-8D967E7FC37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3700358F-2B81-43B4-8093-8D967E7FC37F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

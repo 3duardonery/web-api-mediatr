@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using APIMediatr.Domain.Commands;
+using APIMediatr.Domain.Interfaces;
+using APIMediatr.Domain.Models;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace APIMediatr.Api.Controllers
 {
@@ -19,7 +18,6 @@ namespace APIMediatr.Api.Controllers
         {
             _mediator = mediator;
             _repository = repository;
-            Class1 c1 = new Class1();
         }
 
         [HttpGet]
